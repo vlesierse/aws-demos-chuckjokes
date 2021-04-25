@@ -1,0 +1,12 @@
+@page
+@model JokeModel
+@{
+    ViewData["Title"] = "Joke";
+}
+
+<div class="text-center">
+    <p>Prepare to laugh...</p>
+    <p class="lead">@Model.Joke</p>
+    <p>Do you want hear another joke?</p>
+    <a class="btn btn-primary" asp-page="Joke">Tell me a Joke</a>
+</div>
